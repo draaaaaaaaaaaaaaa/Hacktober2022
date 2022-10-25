@@ -1,0 +1,17 @@
+const mail = {
+    dari: "pengirim@dicoding.com",
+    sendMessage: function (msg, to, date) {
+        console.log(`you send: ${msg} to ${to} from ${this.dari} , ${date}`);
+    }
+};
+
+mail.saveContact = function(addr) {
+    console.log(`email saved ${addr}`);
+  }
+
+mail.dari = "pengirim2@dicoding.com";
+mail.saveContact('mohdaffa@gmail.com');
+
+console.log(mail.dari);
+mail.sendMessage('apakabar', 'penerima@dicoding.com','2 hours');
+ 
